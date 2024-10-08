@@ -1,5 +1,5 @@
 <template>
     <NuxtLayout name="portfolio">
-        <NuxtPage class="grow"/>
+        <NuxtPage class="grow" />
     </NuxtLayout>
 </template>

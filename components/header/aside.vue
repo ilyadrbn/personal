@@ -54,17 +54,23 @@ const menuItems = ref<TMenu>({
             blank: true,
         },
     ],
+    CV: {
+        title: "Download CV",
+        icon: "solar:download-outline",
+    },
 });
 </script>
 
 <template>
-    <header class="aside-header sticky left-0 top-0 h-screen w-64">
+    <header
+        class="aside-header sticky left-0 top-0 flex h-screen w-64 flex-col"
+    >
         <div class="aside-header__profile">
             <picture class="aside-header__profile-picture">
                 <source srcset="" />
                 <img
                     src=""
-                    alt=""
+                    alt="My photo"
                 />
             </picture>
             <div class="aside-header__profile-info">
@@ -104,5 +110,14 @@ const menuItems = ref<TMenu>({
                 </li>
             </ul>
         </nav>
+        <div class="aside-header__cv-loader">
+            <button>
+                <Icon :name="menuItems.CV.icon" />
+                {{ menuItems.CV.title }}
+            </button>
+        </div>
+        <div class="aside-header__footer mt-auto">
+            <p>© 2023 Illia Horbul</p>
+        </div>
     </header>
 </template>
