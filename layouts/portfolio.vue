@@ -7,13 +7,13 @@ const setColorScheme = (newTheme: TTheme) => {
 <template>
     <div
         id="portfolio-layout"
-        class="dark:bg-primary-dark-2 dark:text-primary-light-1 light:bg-primary-light-2 light:text-primary-dark-1 flex min-h-screen flex-row"
+        class="flex min-h-screen flex-row dark:bg-primary-dark-2 dark:text-primary-light-1"
     >
         <HeaderAside />
         <slot />
         <ToggleTheme
             :theme="$colorMode.preference"
-            @click.prevent="
+            @toggle-theme="
                 setColorScheme(
                     $colorMode.preference === 'dark' ? 'light' : 'dark',
                 )

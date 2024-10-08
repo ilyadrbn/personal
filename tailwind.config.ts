@@ -23,6 +23,10 @@ export default {
                 "primary-light-4": "#A3A3A3",
                 "primary-light-5": "#8A8A8A",
             },
+            fontFamily: {
+                inter: ["Inter", "sans-serif"],
+                manrope: ["Manrope", "sans-serif"],
+            },
         },
     },
     plugins: [],
