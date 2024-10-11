@@ -10,7 +10,7 @@ export default defineNuxtConfig({
     nitro: {
         compressPublicAssets: true,
     },
-    devtools: { enabled: true },
+    devtools: { enabled: false },
     css: ["~/assets/css/main.css"],
     tailwindcss: {
         cssPath: "~/assets/css/main.css",

@@ -19,7 +19,7 @@ defineProps<{
                 :key="route.href"
                 class="rounded-xl border border-primary-light-3 transition-colors hover:bg-primary-light-3 dark:border-primary-dark-3 dark:hover:bg-primary-dark-3"
             >
-                <PrimaryButton :route />
+                <PrimaryLink :route />
             </li>
         </ul>
     </nav>
