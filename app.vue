@@ -8,6 +8,6 @@ useHead({
 
 <template>
     <NuxtLayout name="portfolio">
-        <NuxtPage class="h-0 grow overflow-auto" />
+        <NuxtPage class="h-screen grow overflow-auto max-lg:h-0" />
     </NuxtLayout>
 </template>

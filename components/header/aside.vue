@@ -18,7 +18,7 @@ const isMenuOpened = ref<boolean>(false);
         <ToggleMenuBtn
             v-model="isMenuOpened"
         />
-        <div class="aside-header__wrapper flex h-full flex-col gap-8">
+        <div class="aside-header__wrapper flex flex-col gap-8">
             <HeaderRoutesList :routes="menuItems.routes" />
             <HeaderRoutesList
                 :routes="menuItems.resources"
