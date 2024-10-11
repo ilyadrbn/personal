@@ -7,7 +7,7 @@ defineProps<{
 
 <template>
     <div
-        class="aside-header__profile mb-6 flex w-max gap-4 max-lg:sticky max-lg:top-0 max-lg:z-[1] max-lg:h-auto max-lg:bg-primary-light-1 max-lg:w-auto"
+        class="aside-header__profile mb-6 flex w-max gap-4 max-lg:sticky max-lg:top-0 max-lg:z-[1] max-lg:h-auto max-lg:w-auto max-lg:bg-primary-light-1 dark:max-lg:bg-primary-dark-2"
     >
         <NuxtImg
             format="webp"
