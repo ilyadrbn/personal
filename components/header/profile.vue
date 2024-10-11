@@ -6,7 +6,9 @@ defineProps<{
 </script>
 
 <template>
-    <div class="aside-header__profile mb-6 flex gap-4 max-lg:h-auto">
+    <div
+        class="aside-header__profile mb-6 flex w-max gap-4 max-lg:sticky max-lg:top-0 max-lg:z-[1] max-lg:h-auto max-lg:bg-primary-light-1 max-lg:w-auto"
+    >
         <NuxtImg
             format="webp"
             src="/IAM.webp"

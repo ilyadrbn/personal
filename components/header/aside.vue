@@ -6,9 +6,9 @@ const isMenuOpened = ref<boolean>(false);
 
 <template>
     <header
-        class="aside-header sticky left-0 top-0 h-screen flex-col border border-primary-light-3 px-6 py-8 transition-all duration-300 ease-in-out dark:border-primary-dark-3 max-lg:h-20 max-lg:overflow-hidden max-lg:py-2"
+        class="aside-header sticky left-0 top-0 h-screen flex-col border border-primary-light-3 px-6 py-8 transition-all duration-300 ease-in-out dark:border-primary-dark-3 max-lg:relative max-lg:h-20 max-lg:overflow-hidden max-lg:py-2"
         :class="{
-            'overflow-hidden max-lg:h-screen': isMenuOpened,
+            'max-lg:h-screen max-lg:!overflow-auto max-lg:pb-8': isMenuOpened,
         }"
     >
         <HeaderProfile
@@ -17,7 +17,6 @@ const isMenuOpened = ref<boolean>(false);
         />
         <ToggleMenuBtn
             v-model="isMenuOpened"
-            class="hidden max-lg:block"
         />
         <div class="aside-header__wrapper flex h-full flex-col gap-8">
             <HeaderRoutesList :routes="menuItems.routes" />

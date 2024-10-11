@@ -8,7 +8,7 @@ const toggleMenu = () => {
 
 <template>
     <button
-        class="absolute right-2 top-2"
+        class="fixed right-4 top-[19px] z-[2] hidden max-lg:block"
         @click.prevent="toggleMenu"
     >
         <Icon
