@@ -1,4 +1,4 @@
-export const useMenuItems = () => {
+export const getMenuItems = () => {
     const menuItems: TMenu = {
         name: "Illia Horbul",
         position: "Middle Frontend Developer",

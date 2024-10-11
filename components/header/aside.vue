@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { menuItems } = useMenuItems();
+const { menuItems } = getMenuItems();
 
 const isMenuOpened = ref<boolean>(false);
 </script>
